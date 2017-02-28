@@ -8,12 +8,12 @@ express()
       res.send(data);
     });
  })
- .listen(3000, function(err) {
+ .listen(80, function(err) {
     if (err) {
       console.error(err);
       return;
     }
 
-    console.log("Express Server listening on port 3000");
+    console.log("Express Server listening on port 80");
   })
 ;

@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker build -t kostyaurysov/sample-node .
+
+test:
+  override:
+    - docker run kostyaurysov/sample-node npm test
