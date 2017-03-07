@@ -2,6 +2,7 @@
 #docker build -t kostyaurysov/sample-node .
 #docker push kostyaurysov/sample-node
 
+
 ssh root@46.101.228.243 << EOF
 docker pull x3medima17/sample-node:latest
 docker stop web || true
